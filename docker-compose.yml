@@ -1,18 +1,6 @@
 version: '3'
 
 services:
-# ### workspace ################################################
-#     workspace:
-#         image: wordpress:${WORDPRESS_TAG}
-#         environment:
-#             - WORDPRESS_DB_HOST=mysql
-#             - WORDPRESS_DB_USER=${MYSQL_USER}
-#             - WORDPRESS_DB_PASSWORD=${MYSQL_PASSWORD}
-#             - WORDPRESS_DB_NAME=${MYSQL_DATABASE}
-#         volumes:
-#             - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}
-#         depends_on:
-#             - mysql
     workspace:
         build:
             context: ./workspace

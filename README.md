@@ -69,7 +69,7 @@
    define( 'DB_COLLATE', '' );
    ```
 
-   SALTやAUTHを変更するため、[ここに](https://api.wordpress.org/secret-key/1.1/salt/)アクセスしたもので置き換える
+   同ファイル下部にあるSALTやAUTHを変更するため、[ここに](https://api.wordpress.org/secret-key/1.1/salt/)アクセスしたもので置き換える
 
 6. [ここ](http://localhost/wp-admin/install.php)にアクセスしてwordpressの初期設定をする
 
