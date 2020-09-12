@@ -1,6 +1,6 @@
 # wordpress環境構築
 
-- Wordpress + Nginx + Mysql + xdebugの環境です
+- Wordpress + Nginx + Mysql の環境です
 - dockerを使ったWordpressの環境構築なのでwordockと名付けています
 
 
