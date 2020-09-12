@@ -73,6 +73,14 @@
 
 6. [ここ](http://localhost/wp-admin/install.php)にアクセスしてwordpressの初期設定をする
 
+## 日本語化
+
+1. [ここ](https://ja.wordpress.org/download/)にアクセスし日本語版をDL
+
+2. DLしたものの中にあるwp-contentのlangagesを元のwp-contentに移動
+
+3. 管理画面のsessings > generalから言語を選択できるようになる
+
 ## 自作テーマを作りたいとき
 
 - [sage](https://roots.io/sage/)というものを使えば自作テーマを手軽に作れるようです。(フレームワークの一種かな)
