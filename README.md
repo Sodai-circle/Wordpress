@@ -194,8 +194,6 @@
 
 - [sage](https://roots.io/docs/sage/9.x/installation/#browsersync-configuration)
 
-- 面倒でwordpressの日本語化はやらなかったんですが、できた人いたらpull requestしてもらえると助かります。
-
   
 
    
