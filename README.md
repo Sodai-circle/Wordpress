@@ -142,7 +142,7 @@
    No actions were taken.
    ```
 
-3. コンパイル
+3. 作成したテーマの階層でコンパイル
 
    `yarn`
 
