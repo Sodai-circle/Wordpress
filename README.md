@@ -73,23 +73,10 @@
 
 6. [ここ](http://localhost/wp-admin/install.php)にアクセスしてwordpressの初期設定をする
 
-## 使い方
-
-- 始めるとき wordockの階層で
-   ```bash
-   docker-compose up -d workspace nginx mysql
-   ```
-- 終わるとき
-   ```bash
-   docker-compose down
-   ```
-
-
-
 ## 自作テーマを作りたいとき
 
-- [sage](https://roots.io/sage/)というものを使えば自作テーマを手軽に作れるようです。(フレームワークなのかな)
-- 以下さらにsageの環境構築です
+- [sage](https://roots.io/sage/)というものを使えば自作テーマを手軽に作れるようです。(フレームワークの一種かな)
+- 以下はsageの環境構築です
 
 ### sageの環境構築
 
@@ -102,11 +89,91 @@
    composer create-project roots/sage your-theme-name
    ```
 
-2. sageを立ち上げる
+2. 幾つか質問されるが、こんな感じに答える
+
+   ```
+   Theme Name [Sage Starter Theme]:
+   > 
+
+   Theme URI [https://roots.io/sage/]:
+   > 
+
+   Theme Description [Sage is a WordPress starter theme.]:
+   > 
+
+   Theme Version [9.0.9]:
+   > 
+
+   Theme Author [Roots]:
+   > 
+
+   Theme Author URI [https://roots.io/]:
+   > 
+
+
+   Local development URL of WP site [http://example.test]:
+   > http://localhost 
+
+   Path to theme directory (e.g., /wp-content/themes/wasecoma-theme) [/app/themes/sage]:
+   > /wp-content/themes/wasecoma-theme
+
+
+   Which framework would you like to load? [Bootstrap]:
+   [0] None
+   [1] Bootstrap
+   [2] Bulma
+   [3] Foundation
+   [4] Tachyons
+   [5] Tailwind
+   > 
+
+   Are you sure you want to overwrite the following files?
+   - scripts/autoload/_bootstrap.js
+   - styles/autoload/_bootstrap.scss
+   - styles/common/_variables.scss
+   - styles/components/_comments.scss
+   - styles/components/_forms.scss
+   - styles/components/_wp-classes.scss
+   - styles/layouts/_header.scss
+
+   (yes/no) [no]:
+   > 
+
+   No actions were taken.
+   ```
+
+3. コンパイル
 
    `yarn`
 
-3. 幾つか質問されるが、全てEnterでOK
+4. 各種コマンド
+   
+   - assetディレクトリを手動でコンパイルしたい時
+
+      `yarn build`
+
+   - 自動でコンパイルしたい時
+
+      `yarn start`
+
+   - 完成した時
+
+      `yarn build:production`
+
+   - [参照](https://roots.io/docs/sage/9.x/compiling-assets/#available-build-commands)
+
+
+
+## 使い方
+
+- 始めるとき wordockの階層で
+   ```bash
+   docker-compose up -d workspace nginx mysql
+   ```
+- 終わるとき
+   ```bash
+   docker-compose down
+   ```
 
 ## まとめ
 
