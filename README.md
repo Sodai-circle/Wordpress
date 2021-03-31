@@ -1,16 +1,13 @@
 # wordpress環境構築
 
 - Wordpress + Nginx + Mysql の環境です
-- dockerを使ったWordpressの環境構築なのでwordockと名付けています
-
-
 
 ## WorDock
 
 1. リポジトリをクローン
 
    ```
-   git clone https://gitlab.com/welcome-to-sodai/wordpress.git wordpress_app/wordock
+   git clone https://github.com/Sodai-circle/Wordpress.git wordpress_app/wordock
    ```
 
 2. wordock階層で
@@ -183,16 +180,6 @@
    docker-compose down
    ```
 
-## まとめ
-
-- Wordpressの環境構築ができた
-- 自作テーマを作るための環境構築ができた
-
-## Next Step
-
-- wordpressを勉強していくのみ!
-
-- [sage](https://roots.io/docs/sage/9.x/installation/#browsersync-configuration)
 
   
 
